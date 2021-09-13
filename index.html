@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisa precios</title>
+</head>
+<body>
+    <h3>Selecciona la carta de la que desees revisar precios</h3>
+
+    <select name="carta" id="carta">
+        <option value="" selected disabled>Selecciona una carta</option>
+        <option value="pikachu">Pikachu</option>
+        <option value="venusaur">Venusaur</option>
+        <option value="blastoise">Blastoise</option>
+        <option value="charizard">Charizard</option>
+    </select>
+
+    <p><img src="https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg" width="200" id="imagenCarta" alt=""></p>
+
+    <p><input type="text" name="precioDolares" id="precioDolares" disabled> USD</p>
+
+    <h4>¿Quieres transformar el precio otra moneda?</h4>
+
+    <button id="transformarCLP">A pesos Chilenos</button>
+    <button id="transformarARG">A pesos Argentinos</button>
+
+    <p><input type="text" name="precioConvertido" id="precioConvertido" disabled> <span id="tipoMoneda"></span></p>
+
+
+    <p>*precio del dolar a dia 12/09/2021</p>
+    <script src="claseOlave.js"></script>
+</body>
+</html>
